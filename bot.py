@@ -74,7 +74,7 @@ async def start(bot: Client, cmd: Message):
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton("BotsList Channel", url="https://t.me/TGRobot_List")
+                        InlineKeyboardButton("Bots Channel", url="https://t.me/IrisMoviesMain")
                     ],
                     [
                         InlineKeyboardButton("About Bot", callback_data="aboutbot"),
@@ -82,8 +82,8 @@ async def start(bot: Client, cmd: Message):
                         InlineKeyboardButton("Close 🚪", callback_data="closeMessage")
                     ],
                     [
-                        InlineKeyboardButton("Bots Channel", url="https://t.me/TeleRoidGroup"),
-                        InlineKeyboardButton(" Support Group", url="https://t.me/TeleRoid14")
+                        InlineKeyboardButton("Bots Channel", url="https://t.me/IrisMoviesMain"),
+                        InlineKeyboardButton(" Series Channel", url="https://t.me/SeriesNetX")
                     ]
                 ]
             )
@@ -152,7 +152,7 @@ async def main(bot: Client, message: Message):
         try:
             forwarded_msg = await message.forward(Config.DB_CHANNEL)
             file_er_id = str(forwarded_msg.id)
-            share_link = f"https://t.me/{Config.BOT_USERNAME}?start=PredatorHackerzZ_{str_to_b64(file_er_id)}"
+            share_link = f"https://t.me/{Config.BOT_USERNAME}?start=File_{str_to_b64(file_er_id)}"
             CH_edit = await bot.edit_message_reply_markup(message.chat.id, message.id,
                                                           reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton(
                                                               "Get Sharable Link", url=share_link)]]))
@@ -318,8 +318,8 @@ async def button(bot: Client, cmd: CallbackQuery):
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton("Source Codes of Bot",
-                                             url="https://github.com/PredatorHackerzZ/TG-FileStore")
+                        InlineKeyboardButton("Main Channel",
+                                             url="https://t.me/IrisMoviesMain")
                     ],
                     [
                         InlineKeyboardButton("Go Home", callback_data="gotohome"),
@@ -336,8 +336,8 @@ async def button(bot: Client, cmd: CallbackQuery):
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton("Source Codes of Bot",
-                                             url="https://github.com/PredatorHackerzZ/TG-FileStore")
+                        InlineKeyboardButton("Main Channel",
+                                             url="https://t.me/IrisMoviesMain")
                     ],
                     [
                         InlineKeyboardButton("About Bot", callback_data="aboutbot"),
@@ -354,7 +354,7 @@ async def button(bot: Client, cmd: CallbackQuery):
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton("BotsList Channel", url="https://t.me/PayForBotz")
+                        InlineKeyboardButton("Bots Channel", url="https://t.me/IrisMoviesMain")
                     ],
                     [
                         InlineKeyboardButton("About Bot", callback_data="aboutbot"),
@@ -362,8 +362,8 @@ async def button(bot: Client, cmd: CallbackQuery):
                         InlineKeyboardButton("Close 🚪", callback_data="closeMessage")
                     ],
                     [
-                        InlineKeyboardButton("Support Group", url="https://t.me/TeleRoid14"),
-                        InlineKeyboardButton("Bots Channel", url="https://t.me/TeleRoidGroup")
+                        InlineKeyboardButton("Bots Channel", url="https://t.me/IrisMoviesMain"),
+                        InlineKeyboardButton("Series Channel", url="https://t.me/SeriesNetX")
                     ]
                 ]
             )
@@ -411,8 +411,8 @@ async def button(bot: Client, cmd: CallbackQuery):
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton("Support Group", url="https://t.me/TeleRoid14"),
-                        InlineKeyboardButton("Bots Channel", url="https://t.me/TeleRoidGroup")
+                        InlineKeyboardButton("Bots Channel", url="https://t.me/IrisMoviesMain"),
+                        InlineKeyboardButton("Series Channel", url="https://t.me/SeriesNetX")
                     ],
                     [
                         InlineKeyboardButton("About Bot", callback_data="aboutbot"),
